@@ -37,13 +37,18 @@ html {
 }
 
 body {
-  width: 1920px;
-  height: 100%;
-/*  background: url(../img/background_elf.jpg) no-repeat;*/
+  height: 1080px;
+  background: url(../img/background_elf.jpg) no-repeat;
   background-color: #faefdd;
-  background-size: 100%;
+  background-size: 1920px;
   font-family: Romul, serif;
   text-transform: uppercase;
+}
+
+.container {
+  position: relative;
+  width: 1920px;
+  height: 100%;
 }
 
 a {
@@ -111,8 +116,9 @@ a {
 
 .main-nav {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
   width: 400px;
 }
 
@@ -140,8 +146,8 @@ a {
 .forum-news {
   position: absolute;
   text-align: right;
-  left: 0;
-  bottom: 0;
+  top: 50%;
+  left: 25%;
 }
 
 .forum-news__list {
@@ -183,8 +189,8 @@ a {
 
 .project-news {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  right: 25%;
 }
 
 .project-news__list {
@@ -261,8 +267,8 @@ a {
 
 .server-status {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 30%;
+  right: 28%;
 }
 
 .server-status__image {
@@ -296,15 +302,16 @@ a {
 
 .login {
   position: absolute;
-  left: 50%
+  top: 8%;
+  left: 5%;
 }
 
 /* Регистрация */
 
 .registration {
   position: absolute;
-  top: 0;
-  right: 50%;
+  top: 8%;
+  left: 23%;
   width: 335px;
 }
 
@@ -312,8 +319,9 @@ a {
 
 .download {
   position: absolute;
-  left: 50%;
-  bottom: 0;text-align: center;
+  top: 5%;
+  right: 7%;
+  text-align: center;
 }
 .download__text {
   font-size: 0.8571rem;
