@@ -1,0 +1,349 @@
+@font-face {
+  font-family: Romul;
+  src: url(../fonts/romul.ttf);
+}
+
+/* Вспомогательные стили + хаки */
+
+small {
+  font-size: 0.5714rem;
+  line-height: normal;
+  color: #4c0101;
+}
+
+.ta-left {
+  text-align: left;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.captcha {
+  width: 80px;
+  background-color: #50625e;
+}
+
+/* Общие стили */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  width: 1920px;
+  height: 100%;
+/*  background: url(../img/background_elf.jpg) no-repeat;*/
+  background-color: #faefdd;
+  background-size: 100%;
+  font-family: Romul, serif;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-title {
+  font-size: 1.714rem;
+  line-height: 2rem;
+  text-align: right;
+  margin-bottom: 1.571rem;
+  color: #929292;
+}
+
+.btn {  
+  padding: 0 0.5714rem;
+  font-family: Romul, serif;
+  font-size: 0.8571rem;
+  line-height: 1.571rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  background-image: linear-gradient(to bottom, #a9c400 50%, #96b000 50%);
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.form {
+  font-size: 0.8571rem;
+  color: #1e0402;
+  text-align: center;
+}
+
+.form table {
+  margin-right: -7px;
+  margin-bottom: 0.9rem;
+  text-align: right;
+  border-collapse: separate;
+  border-spacing: 7px 5px;
+}
+
+.form td {
+  vertical-align: middle;
+}
+
+
+.form-input {
+  width: 7.5rem;
+  height: 1.429rem;
+  border: 1px solid #c6b19a;
+}
+
+.form-input:focus {
+  border-color: #6b2524;
+  outline: 0;
+}
+
+
+/* Главная навигация */
+
+.main-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400px;
+}
+
+.main-nav__item {
+  font-size: 1rem;
+  line-height: 1.571rem;
+  text-align: center;
+}
+
+.main-nav__link {
+  color: #505050;
+}
+
+.main-nav__link:hover {
+  line-height: 0;
+  font-size: 1.143rem;
+}
+
+.main-nav__link:active {
+  color: #000;
+}
+
+/* Новости с форума */
+
+.forum-news {
+  position: absolute;
+  text-align: right;
+  left: 0;
+  bottom: 0;
+}
+
+.forum-news__list {
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.forum-news__item:not(:last-child) {
+  opacity: 0.5;
+}
+
+.forum-news__link {
+  display: block;
+  color: #6b2524;
+  border-bottom: 1px solid #f3d1b7;
+}
+
+.forum-news__link::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.9286rem;
+  width: 17px;
+  height: 18px;
+  background: url(../img/icon-scroll.png) center no-repeat;
+}
+
+.forum-news__item:hover {
+  opacity: 1;
+}
+
+.forum-news__item:hover ~ .forum-news__item:last-child {
+  opacity: 0.5;
+}
+
+/* Новости проекта */
+
+.project-news {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.project-news__list {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: right;
+}
+
+.project-news__item:not(:last-child) {
+  opacity: 0.5;
+}
+
+.project-news__link {
+  display: block;
+  color: #5c0101;
+  border-bottom: 1px solid #f3d1b7;
+}
+
+.news-post {
+  position: relative;
+  text-align: left;
+}
+
+.news-post-img-outline {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  top: 6px;
+  background-image: linear-gradient(to bottom, #ffbe00, #d96400);
+  border-radius: 18%;
+}
+
+
+.news-post-img {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 60px;
+  height: 60px;
+  margin: 7px 0 7px 1px;
+  margin-right: 0.7857rem;
+  border-radius: 18%;
+}
+
+.news-post__text-wrap {
+  display: inline-block;
+  vertical-align: top;
+  padding: 18px 0 8px 0;
+}
+
+.news-post__title {
+  line-height: normal;
+}
+
+.news-post__info {
+  font-size: 0.7143rem;
+  line-height: normal;
+  color: #000;
+}
+
+.news-post__author {
+  color: #e71717;
+}
+
+.project-news__item:hover {
+  opacity: 1;
+}
+
+.project-news__item:hover ~ .project-news__item:last-child {
+  opacity: 0.5;
+}
+
+/* Статус сервера и онлайн */
+
+.server-status {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.server-status__image {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.server-status__info-wrap {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 25px;
+}
+
+.server-status__online {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 2.571rem;
+  line-height: normal;
+  text-align: center;
+  color: #400101;
+  border-bottom: 1px solid #b99d80;
+}
+
+.server-status__title {
+  font-size: 0.8571rem;
+  line-height: normal;
+  color: #6f6f6f;
+}
+
+/* Кабинет */
+
+.login {
+  position: absolute;
+  left: 50%
+}
+
+/* Регистрация */
+
+.registration {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 335px;
+}
+
+/* Скачать */
+
+.download {
+  position: absolute;
+  left: 50%;
+  bottom: 0;text-align: center;
+}
+.download__text {
+  font-size: 0.8571rem;
+  line-height: 1.571rem;
+  text-align: right;
+  color: #1e0402;
+}
+
+.download__links-wrap {
+  display: inline-block;
+}
+
+.download__link {
+  position: relative;
+  display: block;
+  min-width: 190px;
+  margin-bottom: 10px;
+  padding-right: 60px;
+  line-height: 46px;
+}
+
+.download__link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 48px;
+  height: 46px;
+  background: url(../img/icon-l2.png) no-repeat center;
+}
+
+.download__link--patch::after {
+  background-image: url(../img/icon-project.png);
+}
