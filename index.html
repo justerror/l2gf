@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <link href="css/reset.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/jquery-3.1.0.js"></script>
   <title>Lineage.GF</title>
 </head>
 
@@ -12,14 +13,14 @@
 <div class="container">
   <nav>
     <ul class="main-nav">
-      <li class="main-nav__item"><a href="" class="main-nav__link">Главная</a></li>
-      <li class="main-nav__item"><a href="" class="main-nav__link">О сервере</a></li>
-      <li class="main-nav__item"><a href="" class="main-nav__link">Регистрация</a></li>
-      <li class="main-nav__item"><a href="" class="main-nav__link">Скачать</a></li>
-      <li class="main-nav__item"><a href="" class="main-nav__link">Пожертвования</a></li>
-      <li class="main-nav__item"><a href="" class="main-nav__link">Статистика</a></li>
-      <li class="main-nav__item"><a href="" class="main-nav__link">Кабинет</a></li>
-      <li class="main-nav__item"><a href="" class="main-nav__link">Форум</a></li>
+      <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--index">Главная</a></li>
+      <li class="main-nav__item"><a href="" class="main-nav__link  main-nav__link--about">О сервере</a></li>
+      <li class="main-nav__item"><a href="" class="main-nav__link  main-nav__link--registration">Регистрация</a></li>
+      <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--download">Скачать</a></li>
+      <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--donate">Пожертвования</a></li>
+      <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--stat">Статистика</a></li>
+      <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--cabinet">Кабинет</a></li>
+      <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--forum">Форум</a></li>
     </ul>
   </nav>
 
@@ -35,7 +36,7 @@
     </ul>
   </section>
 
-  <section class="project-news">
+  <section class="project-news js-section-toggler">
     <h1 class="main-title">Новости<br> проекта</h1>
     <ul class="project-news__list">
       <li class="project-news__item">
@@ -44,7 +45,7 @@
             <div class="news-post-img-outline"></div>
             <img src="img/icon-darkelf.png" alt="" class="news-post-img">
             <div class="news-post__text-wrap">
-              <h2 class="news-post__title">Захвати замок и получи 10к</h2>
+              <h2 class="news-post__title">Захвати замок и получи 100к</h2>
               <p class="news-post__info"><span class="news-post__author">Administrator</span> Сегодня в
                 <time>19:00</time>
               </p>
@@ -58,7 +59,7 @@
             <div class="news-post-img-outline"></div>
             <img src="img/icon-darkelf.png" alt="" class="news-post-img">
             <div class="news-post__text-wrap">
-              <h2 class="news-post__title">Захвати замок и получи 10к</h2>
+              <h2 class="news-post__title">Захвати замок и получи 100к</h2>
               <p class="news-post__info"><span class="news-post__author">Administrator</span> Сегодня в
                 <time>19:00</time>
               </p>
@@ -72,7 +73,7 @@
             <div class="news-post-img-outline"></div>
             <img src="img/icon-darkelf.png" alt="" class="news-post-img">
             <div class="news-post__text-wrap">
-              <h2 class="news-post__title">Захвати замок и получи 10к</h2>
+              <h2 class="news-post__title">Захвати замок и получи 100к</h2>
               <p class="news-post__info"><span class="news-post__author">Administrator</span> Сегодня в
                 <time>19:00</time>
               </p>
@@ -91,7 +92,7 @@
     </div>
   </section>
 
-  <section class="login">
+  <section class="login js-section-toggler">
     <h1 class="main-title">Ваш личный<br> кабинет</h1>
     <form class="form form--login">
       <table>
@@ -110,7 +111,7 @@
         <tr>
           <td class="ta-left">Код с
             <br> картинки</td>
-          <td class="captha"></td>
+          <td class="captcha"></td>
           <td>
             <input class="form-input" type="text" required>
           </td>
@@ -120,7 +121,7 @@
     </form>
   </section>
 
-  <section class="registration">
+  <section class="registration js-section-toggler">
     <h1 class="main-title">Регистрация<br> на проекте</h1>
     <form class="form form--registration">
       <table>
@@ -166,7 +167,7 @@
     </form>
   </section>
 
-  <section class="download">
+  <section class="download js-section-toggler">
     <h1 class="main-title">Скачать<br> патч/клиент</h1>
     <p class="download__text">Для игры на серверах Lineage 2 проекта
       <br> lineage.gf необходимо скачать:</p>
@@ -176,6 +177,7 @@
     </div>
   </section>
 </div>
+<script src="js/script.js"></script>
 </body>
 
 </html>

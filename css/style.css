@@ -33,12 +33,15 @@ small {
 }
 
 html {
+  min-width: 1200px;
   font-size: 18px;
 }
 
 body {
+  max-width: 1920px;
   height: 1080px;
-  background: url(../img/background_elf.jpg) no-repeat;
+  margin: 0 auto;
+  background: url(../img/background_elf.jpg) no-repeat center;
   background-color: #faefdd;
   background-size: 1920px;
   font-family: Romul, serif;
@@ -47,8 +50,11 @@ body {
 
 .container {
   position: relative;
-  width: 1920px;
+  z-index: 100;
+  width: 1200px;
   height: 100%;
+  margin: 0 auto;
+  outline: 2px dashed red;
 }
 
 a {
@@ -117,7 +123,7 @@ a {
 .main-nav {
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 270px;
   transform: translateX(-50%);
   width: 400px;
 }
@@ -146,8 +152,8 @@ a {
 .forum-news {
   position: absolute;
   text-align: right;
-  top: 50%;
-  left: 25%;
+  top: 470px;
+  left: 130px;
 }
 
 .forum-news__list {
@@ -157,8 +163,13 @@ a {
   line-height: 2rem;
 }
 
+.forum-news__item {
+  transition: opacity 0.2s;
+}
+
 .forum-news__item:not(:last-child) {
   opacity: 0.5;
+
 }
 
 .forum-news__link {
@@ -189,14 +200,18 @@ a {
 
 .project-news {
   position: absolute;
-  top: 50%;
-  right: 25%;
+  top: 470px;
+  right: 50px;
 }
 
 .project-news__list {
   display: flex;
   flex-direction: column-reverse;
   text-align: right;
+}
+
+.project-news__item {
+  transition: opacity 0.2s; 
 }
 
 .project-news__item:not(:last-child) {
@@ -267,8 +282,8 @@ a {
 
 .server-status {
   position: absolute;
-  top: 30%;
-  right: 28%;
+  top: 310px;
+  right: 200px;
 }
 
 .server-status__image {
@@ -301,29 +316,36 @@ a {
 /* Кабинет */
 
 .login {
+  display: none;
+  
   position: absolute;
-  top: 8%;
-  left: 5%;
+  top: 470px;
+  right: 50px;
 }
 
 /* Регистрация */
 
 .registration {
+  display: none;
+  
   position: absolute;
-  top: 8%;
-  left: 23%;
+  top: 470px;
+  right: 50px;
   width: 335px;
 }
 
 /* Скачать */
 
 .download {
+  display: none;
+  
   position: absolute;
-  top: 5%;
-  right: 7%;
+  top: 470px;
+  right: 50px;
   text-align: center;
 }
 .download__text {
+  margin-bottom: 1.5rem;
   font-size: 0.8571rem;
   line-height: 1.571rem;
   text-align: right;
