@@ -3,6 +3,7 @@
   src: url(../fonts/romul.ttf);
 }
 
+
 /* Вспомогательные стили + хаки */
 
 small {
@@ -26,6 +27,7 @@ small {
   background-color: #50625e;
 }
 
+
 /* Общие стили */
 
 * {
@@ -41,8 +43,8 @@ body {
   margin: 0 auto;
   font-family: Romul, serif;
   text-transform: uppercase;
-/*  background: url(../img/background_elf.jpg) no-repeat top center fixed;*/
-/*  background-size: 1920px;*/
+  /*  background: url(../img/background_elf.jpg) no-repeat top center fixed;*/
+  /*  background-size: 1920px;*/
   background-color: #faefdd;
 }
 
@@ -65,14 +67,13 @@ a {
   color: #929292;
 }
 
-.btn {  
+.btn {
   padding: 0 0.5714rem;
   font-family: Romul, serif;
   font-size: 0.8571rem;
   line-height: 1.571rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.9);
-  background-image: -webkit-linear-gradient(top, #a9c400 50%, #96b000 50%);
   background-image: linear-gradient(to bottom, #a9c400 50%, #96b000 50%);
   border: 0;
   outline: 0;
@@ -102,7 +103,6 @@ a {
   vertical-align: middle;
 }
 
-
 .form-input {
   width: 7.5rem;
   height: 1.429rem;
@@ -116,15 +116,15 @@ a {
 }
 
 
-/*Лого*/ 
+/*Лого*/
 
 .logo {
   position: absolute;
   top: 70px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+
 
 /* Главная навигация */
 
@@ -133,10 +133,8 @@ a {
   left: 50%;
   top: 270px;
   z-index: 100;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 223px;
-
 }
 
 .main-nav__item {
@@ -158,6 +156,7 @@ a {
   color: #000;
 }
 
+
 /* Новости с форума */
 
 .forum-news {
@@ -169,25 +168,18 @@ a {
 }
 
 .forum-news__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
   font-size: 1rem;
   line-height: 2rem;
 }
 
 .forum-news__item {
-  -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
 .forum-news__item:not(:last-child) {
   opacity: 0.5;
-
 }
 
 .forum-news__link {
@@ -215,6 +207,7 @@ a {
   opacity: 0.5;
 }
 
+
 /* Новости проекта */
 
 .project-news {
@@ -224,19 +217,13 @@ a {
 }
 
 .project-news__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
   text-align: right;
 }
 
 .project-news__item {
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s; 
+  transition: opacity 0.2s;
 }
 
 .project-news__item:not(:last-child) {
@@ -259,11 +246,9 @@ a {
   width: 62px;
   height: 62px;
   top: 6px;
-  background-image: -webkit-linear-gradient(top, #ffbe00, #d96400);
   background-image: linear-gradient(to bottom, #ffbe00, #d96400);
   border-radius: 18%;
 }
-
 
 .news-post__img {
   position: relative;
@@ -305,6 +290,7 @@ a {
   opacity: 0.5;
 }
 
+
 /* Статус сервера и онлайн */
 
 .server-status {
@@ -317,7 +303,7 @@ a {
   display: inline-block;
   vertical-align: top;
   -webkit-filter: saturate(1.5);
-  filter: saturate(1.5); 
+  filter: saturate(1.5);
 }
 
 .server-status__info-wrap {
@@ -346,6 +332,7 @@ a {
   color: #6f6f6f;
 }
 
+
 /* Кабинет */
 
 .login {
@@ -354,6 +341,7 @@ a {
   top: 470px;
   right: 50px;
 }
+
 
 /* Регистрация */
 
@@ -365,16 +353,17 @@ a {
   width: 335px;
 }
 
+
 /* Скачать */
 
 .download {
   display: none;
-  
   position: absolute;
   top: 470px;
   right: 50px;
   text-align: center;
 }
+
 .download__text {
   margin-bottom: 1.5rem;
   font-size: 0.8571rem;
@@ -409,6 +398,7 @@ a {
   background-image: url(../img/icon-project.png);
 }
 
+
 /* Свиток с контентом */
 
 .content {
@@ -429,12 +419,12 @@ a {
   position: absolute;
   top: 345px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   font-size: 2rem;
   font-weight: bold;
   color: #444;
 }
+
 
 /* Новости проекта (внутренняя страница) */
 
@@ -456,7 +446,7 @@ a {
 }
 
 .news-post__text {
-  margin-top: 0.9rem;  
+  margin-top: 0.9rem;
   line-height: normal
 }
 
@@ -468,6 +458,7 @@ a {
   text-align: right;
 }
 
+
 /* Главное меню  (внутренняя страница)  */
 
 .main-nav--inner-page {
@@ -476,12 +467,12 @@ a {
   box-shadow: 0 0 15px 20px rgba(255, 255, 255, 0.4);
 }
 
+
 /* Новости форума (внутренняя страница)  */
 
 .forum-news--inner-page {
   z-index: 100;
   top: 214px;
-
   height: 250px;
   overflow: hidden;
 }
